@@ -3,7 +3,7 @@ cache: bundler
 rvm:
 - 2.1
 before_script: bundle update
-script: gem install html-proofer -- --use-system-libraries && bundle exec jekyll build -s site -d _site --trace && htmlproof ./_site
+script: jekyll build && htmlproof ./_site
 branches:
   only:
   - master
