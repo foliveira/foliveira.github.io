@@ -1,0 +1,17 @@
+# Site settings
+title: Fábio's Little Place in the Web
+header-img: images/home-bg.jpg
+email: fabio.an.oliveira@gmail.com
+description: ""
+baseurl: ""
+url: "http://foliveira.github.io"
+twitter_username: fanoliveira
+github_username:  foliveira
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","LICENSE",
+  "vendor", "README.md"]
