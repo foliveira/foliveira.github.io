@@ -2,6 +2,8 @@
 
 It is automatically transformed by "Jekyll" into a static site whenever I push this repository to GitHub.
 
+Also it seems that the it's [![Build Status](https://travis-ci.org/foliveira/foliveira.github.io.svg)](https://travis-ci.org/foliveira/foliveira.github.io)
+
 ## License
 [![Creative Commons License][cc-image]][cc-url] and [![MIT License][mit-image]][mit-url]
 
