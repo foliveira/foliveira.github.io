@@ -2,7 +2,7 @@
 
 It is automatically transformed by "Jekyll" into a static site whenever I push this repository to GitHub.
 
-Also it seems that the it's [![Build Status](https://travis-ci.org/foliveira/foliveira.github.io.svg)](https://travis-ci.org/foliveira/foliveira.github.io)
+Also it seems that the it's [![Build Status][travis-image]][travis-url]
 
 ## License
 [![Creative Commons License][cc-image]][cc-url] and [![MIT License][mit-image]][mit-url]
@@ -19,3 +19,5 @@ All other directories and files are under the [MIT License][mit-url]. Feel free 
 [cc-url]: https://creativecommons.org/licenses/by-sa/4.0/
 [mit-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [mit-url]: LICENSE
+[travis-image]: https://img.shields.io/travis/foliveira/foliveira.github.io.svg?style=flat-square&label=build%20is
+[travis-url]: https://travis-ci.org/foliveira/foliveira.github.io
