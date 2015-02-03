@@ -3,7 +3,7 @@ cache: bundler
 rvm:
 - 2.1
 before_script: bundle update
-script: bundle exec jekyll build -s site -d _site --trace && bundle exec htmlproof ./_site
+script: bundle exec jekyll build && bundle exec htmlproof ./_site
 branches:
   only:
   - master

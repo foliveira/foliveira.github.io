@@ -1,6 +1,6 @@
 # This is the data for my blog
 
-It is automatically transformed by "Jekyll" into a static site whenever I push this repository to GitHub.
+It is automatically transformed by [Jekyll](https://github.com/jekyll/jekyll) into a static site whenever I push this repository to GitHub.
 
 Also it seems that the it's [![Build Status][travis-image]][travis-url]
 
