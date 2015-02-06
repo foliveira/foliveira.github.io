@@ -11,7 +11,7 @@ gulp.task('images', function () {
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}],
-    use: [pngquant()]
+    use: [pngquant({ quality: '95', speed: 4 })]
   }))
   .pipe(gulp.dest('./images'));
 });
@@ -20,18 +20,22 @@ gulp.task('scripts', function() {
   gulp.src(['scripts/*.js', '!scripts/*.min.js'])
   .pipe(uglify())
   .pipe(rename({ extname: '.min.js' }))
-  .pipe(gulp.dest('./scripts'));
+  .pipe(gulp.dest('./res'));
 });
 
 gulp.task('less', function () {
   gulp.src(['less/*.less', '!less/_*.less'])
   .pipe(less())
-  .pipe(gulp.dest('./styles'))
+  .pipe(gulp.dest('./styles'));
+});
+
+gulp.task('css', function () {
+  gulp.src(['styles/*.css', '!styles/*.min.css'])
   .pipe(minifyCSS({keepSpecialComments: 0}))
   .pipe(rename({ extname: '.min.css' }))
-  .pipe(gulp.dest('./styles'));
+  .pipe(gulp.dest('./res'));
 });
 
 gulp.task('styles', ['less', 'css']);
 
-gulp.task('default', ['images', 'scripts', 'less']);
+gulp.task('default', ['images', 'scripts', 'styles']);

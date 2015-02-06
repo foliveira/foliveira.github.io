@@ -1,8 +1,8 @@
 # Site settings
-title: "Ramblings"
+title: "Mind Defenestration"
 header-img: images/banner.png
 email: fabio.an.oliveira@gmail.com
-description: "Fabio's blog'a thing"
+description: "A place where ideas can just fly out of the window"
 baseurl: ""
 url: "http://blog.foliveira.me"
 twitter_username: fanoliveira
@@ -14,4 +14,5 @@ highlighter: pygments
 permalink: pretty
 paginate: 5
 exclude: ["less", "Gemfile", "LICENSE", "gulpfile.js", "README.md",
-          ".travis.yml", ".gitignore", "package.json", "CNAME", ]
+          ".travis.yml", ".gitignore", "package.json", "CNAME", "node_modules",
+          "scripts", "styles"]

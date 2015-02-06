@@ -1,24 +1,9 @@
-
 $(function() {
-    var MQL = 1170;
-
-    $("[data-toggle='tooltip']").tooltip();
-
-    $("a[data-toggle=\"tab\"]").click(function(e) {
-      e.preventDefault();
-      $(this).tab("show");
-    });
-
-    /*When clicking on Full hide fail/success boxes */
-    $('#name').focus(function() {
-      $('#success').html('');
-    });
-
     //make all images responsive
     $("img").addClass("img-responsive");
 
     //primary navigation slide-in effect
-    if ($(window).width() > MQL) {
+    if ($(window).width() > 1170) {
       var headerHeight = $('.navbar-custom').height();
       $(window).on('scroll', {
         previousTop: 0
