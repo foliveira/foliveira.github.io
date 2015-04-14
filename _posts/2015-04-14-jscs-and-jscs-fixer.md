@@ -3,20 +3,24 @@ layout: post
 title: "Using JSCS and jscs-fixer for Atom.io"
 date: "2015-04-14"
 author: Fábio Oliveira
-version: 0.9
+version: 1.0
 ---
 
 In this post we'll take a brief look at JSCS and take a peak at jscs-fixer, an Atom.io package that allows you to automatically apply JSCS code-style rules to your scripts.
 
 ## Enter JSCS
 
-If you don't know JSCS and go to it's main website, [jscs.info][jscs-site], you are greeted with the following description of tool:
+If you don't know JSCS and decide to visit it's website, [jscs.info][jscs-site], you are greeted with the following description:
 
 > JSCS is a code style linter for programmatically enforcing your style guide. You can configure JSCS for your project in detail using over 90 validation rules, including presets from popular style guides like jQuery, Airbnb, Google, and more.
 
 I love using JSCS, mainly because it is a great way of making sure that all developers on a team are abiding to the same style guide and ensures that no-one gets to make their own choices regarding the code-style being used.
 
-<!-- Maybe take a look at eslint, jslint and see how they compare -->
+There's a couple of other tools that could be used in this process but they differ from JSCS, mainly:
+
+* JSLint and JSHint which both focus on ensuring best coding practices, but don't offer any way of enforcing a given code-style, and
+
+* ESLint, which allows for people to implement their own style rules. A good example of this would be Feross' **[standard][feross-standard]** module.
 
 There's also a set of preset rules from different companies/projects/teams, the likes of which contain Google, Airbnb, the jQuery and Grunt projects and even a Node.js style guide, that you can use and customize via a .jscsrc file that you include in your project root referencing a preset and your tweaks to it or even your own set of rules.
 
@@ -56,17 +60,17 @@ The package can be invoked with one of the following options
 
 ![fix-it][fix-it-gif]
 
-I do intend to add a configurations view to the package, so that the user can customize some details like the location of their prefered JSCS installation (either system-wide or project based) or to the define a preset for those cases where it would suffice.
+I do intend, in a near future, to add a settings view to the package, that would allow a user to customize some details like the location of their prefered JSCS installation (either system-wide or project based) or to the define the location of a `.jscsrc` or a default preset to use as a fallback.
 
 ###Closing notes
 
-Of course this package is open-source and the code can be found in this [repository][github-repo] and the [package page][atom-package], so go ahead and install it and start fixing your scripts automatically from within your editor.
+Of course this package is open-source and the code can be found in it's [repository][github-repo] and the [package page][atom-package], so go ahead and install it and start fixing your scripts automatically from within your editor.
 
 *This post was cross-posted to the YLD! blog [here][yld-crosspost]. Please visit the website and previous posts on the blog.*
 
-<!-- TODO: CHECK IF WORKS HTTPS FOR LINKS -->
-[jscs-site]: https://jscs.info/
-[nunos-article]: https://blog.yld.io/#INSERTNUNOARTICLEHERE
+[jscs-site]: http://jscs.info/
+[feross-standard]: https://github.com/feross/standard/blob/v3.6.0/rc/.eslintrc
+[nunos-article]: http://blog.yld.io/2014/11/12/nano6-and-the-coverage-contract/
 [addys-article]: https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8
 [addys-profile]: https://twitter.com/addyosmani
 [atom-page]: https://atom.io/
