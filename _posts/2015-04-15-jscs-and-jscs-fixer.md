@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Code-styling with JSCS (and jscs-fixer)"
+title: "Using JSCS and jscs-fixer for Atom.io"
 date: "2015-04-15"
 author: Fábio Oliveira
-version: 1.0.2
+version: 1.0.4
 ---
 
 In this post we'll take a brief look at JSCS and take a peak at jscs-fixer, an Atom.io package that allows you to automatically apply JSCS code-style rules to your scripts.
@@ -79,4 +79,4 @@ Of course, this package is open-source and the code can be found in its [reposit
 [fix-it-gif]: https://cldup.com/Rmg6zIa3kS.gif
 [github-repo]: https://github.com/foliveira/jscs-fixer
 [atom-package]: https://atom.io/packages/jscs-fixer
-[yld-crosspost]: https://blog.yld.io/#CROSSPOST
+[yld-crosspost]: http://blog.yld.io/2015/04/15/using-jscs-and-jscs-fixer-for-atom/
