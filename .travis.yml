@@ -15,7 +15,7 @@ before_script:
 script:
   - gulp
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --external-only
+  - bundle exec htmlproofer ./_site --external_only
 branches:
   only:
     - master
