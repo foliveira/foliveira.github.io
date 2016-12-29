@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var minifyCSS = require('gulp-minify-css');
+var clean = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
@@ -31,7 +31,7 @@ gulp.task('less', function () {
 
 gulp.task('css', function () {
   gulp.src(['styles/*.css', '!styles/*.min.css'])
-  .pipe(minifyCSS({keepSpecialComments: 0}))
+  .pipe(clean({keepSpecialComments: 0}))
   .pipe(rename({ extname: '.min.css' }))
   .pipe(gulp.dest('./res'));
 });
