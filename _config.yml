@@ -1,12 +1,16 @@
 # Site settings
-title: "Mind Defenestration"
+title: "Blahg-a-tron"
 header-img: images/banner.png
 email: i@foliveira.me
-description: "A place where ideas can just fly out of the window"
+description: "Because blog-a-tron was already taken"
 baseurl: ""
 url: "http://blog.foliveira.me"
 twitter_username: fanoliveira
 github_username:  foliveira
+
+# Google stuff
+verification_id: lriou8spi6F9DxkOPDwnWZUhUbKrxrqyUqUTeSapILE
+analytics: UA-58916290-1
 
 # Build settings
 markdown: kramdown
